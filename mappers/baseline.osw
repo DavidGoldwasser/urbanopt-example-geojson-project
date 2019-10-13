@@ -97,6 +97,11 @@
         "__SKIP__": true
       } 
     },{
+      "measure_dir_name": "openstudio_results",
+      "arguments": {
+        "__SKIP__": false
+      } 
+    },{
       "measure_dir_name": "default_feature_reports",
       "arguments": {
         "feature_id": null,

@@ -226,18 +226,22 @@ end
 
 ### All
 
+desc 'Clear All Results'
 task :clear_all => [:clear_baseline, :clear_high_efficiency, :clear_mixed, :clear_outbreak] do
   # clear all the scenarios
 end
 
+desc 'Run All Results'
 task :run_all => [:run_baseline, :run_high_efficiency, :run_mixed, :run_outbreak] do
   # run all the scenarios
 end
 
+desc 'Post Process All Results'
 task :post_process_all => [:post_process_baseline, :post_process_high_efficiency, :post_process_mixed, :post_process_outbreak] do
   # post_process all the scenarios
 end
 
+desc 'Update All Results'
 task :update_all => [:run_all, :post_process_all] do
   # run and post_process all the scenarios
 end
