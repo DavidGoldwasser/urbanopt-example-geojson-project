@@ -46,6 +46,7 @@ module URBANopt
         
         OpenStudio::Extension.set_measure_argument(osw, 'ReduceElectricEquipmentLoadsByPercentage', '__SKIP__', false)
         OpenStudio::Extension.set_measure_argument(osw, 'ReduceLightingLoadsByPercentage', '__SKIP__', false)
+        OpenStudio::Extension.set_measure_argument(osw, 'zombie_apocalypse', '__SKIP__', false)
         
         return osw
       end
