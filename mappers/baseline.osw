@@ -92,6 +92,11 @@
         "lighting_power_reduction_percent": 30
       } 
     },{
+      "measure_dir_name": "zombie_apocalypse",
+      "arguments": {
+        "__SKIP__": true
+      } 
+    },{
       "measure_dir_name": "default_feature_reports",
       "arguments": {
         "feature_id": null,

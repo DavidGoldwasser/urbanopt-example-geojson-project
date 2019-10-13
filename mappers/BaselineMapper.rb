@@ -57,6 +57,9 @@ module URBANopt
         
             # add any paths local to the project
             @@osw[:file_paths] << File.join(File.dirname(__FILE__), '../weather/')
+
+            # add any custom measure paths to the project
+            @@osw[:measure_paths] << File.join(File.dirname(__FILE__), '../custom_measures/')
             
             # configures OSW with extension gem paths for measures and files, all extension gems must be 
             # required before this
