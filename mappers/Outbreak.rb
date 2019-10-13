@@ -38,15 +38,13 @@ require 'json'
 
 module URBANopt
   module Scenario
-    class HighEfficiencyMapper < BaselineMapper
+    class OutbreakMapper < BaselineMapper
       
       def create_osw(scenario, features, feature_names)
       
         osw = super(scenario, features, feature_names)
         
-        OpenStudio::Extension.set_measure_argument(osw, 'ReduceElectricEquipmentLoadsByPercentage', '__SKIP__', false)
-        OpenStudio::Extension.set_measure_argument(osw, 'ReduceLightingLoadsByPercentage', '__SKIP__', false)
-        #OpenStudio::Extension.set_measure_argument(osw, 'zombie_apocalypse', '__SKIP__', false)
+        OpenStudio::Extension.set_measure_argument(osw, 'zombie_apocalypse', '__SKIP__', false)
         
         return osw
       end
