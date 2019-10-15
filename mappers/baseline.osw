@@ -108,6 +108,13 @@
         "feature_name": null,
         "feature_type": null
       }
+    },{
+      "measure_dir_name": "custom_feature_reports",
+      "arguments": {
+        "feature_id": null,
+        "feature_name": null,
+        "feature_type": null
+      }
     }
   ],
   "name": null,

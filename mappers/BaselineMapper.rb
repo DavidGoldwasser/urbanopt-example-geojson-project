@@ -198,6 +198,11 @@ module URBANopt
         OpenStudio::Extension.set_measure_argument(osw, 'default_feature_reports', 'feature_name', feature_name)
         OpenStudio::Extension.set_measure_argument(osw, 'default_feature_reports', 'feature_type', feature_type)
 
+        # call the custom feature reporting measure
+        OpenStudio::Extension.set_measure_argument(osw, 'custom_feature_reports', 'feature_id', feature_id)
+        OpenStudio::Extension.set_measure_argument(osw, 'custom_feature_reports', 'feature_name', feature_name)
+        OpenStudio::Extension.set_measure_argument(osw, 'custom_feature_reports', 'feature_type', feature_type)
+
         return osw
       end
       

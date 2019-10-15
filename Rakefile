@@ -144,6 +144,11 @@ desc 'Post Process Baseline Scenario'
 task :post_process_baseline do
   puts 'Post Processing Baseline Scenario...'
   
+  # todo - add an extra post processer that makes combied CSV from runner.registerValues
+  # instead of relying on the a reporting measure that writes CSV or JSON, it can agregate results
+  # from any reporting measures that use runner.registerVaues
+  # one approach here is to make a reporting measure that looks through earlier reporting measure and makes the json and CSV files.
+
   default_post_processor = URBANopt::Scenario::ScenarioDefaultPostProcessor.new(baseline_scenario)
   scenario_result = default_post_processor.run
   scenario_result.save
